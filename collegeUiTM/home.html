@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="asset/image/uitm-vector-logo.png"/>
+    <link rel="stylesheet" href="asset/css/main.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+
+    <title>Utama</title>
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <ul>
+          <img src="asset/image/logouitm.png">
+          <li><a href="stud_login.php">PELAJAR</a></li>
+          <li><a href="login_staff.php">STAF</a></li>
+          <li><a href="scan_qr.php">IMBAS KOD QR</a></li>
+          <li><a href="contactus.html">HUBUNGI KAMI</a></li>
+          <li><a href="aboutus.html">TENTANG KAMI</a></li>
+          <li><a href="home.html">UTAMA</a></li>
+        </ul>
+      </nav>
+    </div><center>
+    <body background="asset/image/bckguitm.png" width="1349" height="620"><br>
+    <div class="box">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="asset/image/1.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/2.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/3.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/4.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/5.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/6.jpg" style="width:85%">
+        </div>
+        <div class="mySlides fade">
+          <img src="asset/image/7.jpg" style="width:85%">
+        </div>
+      </div><br>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div><br><br>
+      <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3500); // Change image every 3.5 seconds
+        }
+      </script>
+    </div><br><br>
+    <div class="box">
+      <p>PERMOHONAN KOLEJ SEMESTER OKTOBER 2021 - FEBRUARI 2022( SESI 20214 ) <br>
+          BAGI PERINGKAT PENGAJIAN DIPLOMA / IJAZAH / DIPLOMA LANJUTAN / SARJANA / PHD</p><br>
+      <table style="width: 100%">
+        <tr>
+          <th>BIL</th>
+          <th>JADUAL</th>
+          <th>FASA 1</th>
+          <th>FASA 2</th>
+          <th>FASA 3</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>TARIKH BUKA</td>
+          <td>1 OKTOBER 2021</td>
+          <td>11 NOVEMBER 2021</td>
+          <td>16 DISEMBER 2021</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>TARIKH TUTUP</td>
+          <td>10 OKTOBER 2021</td>
+          <td>23 NOVEMBER 2021</td>
+          <td>27 DISEMBER 2021</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>KEPUTUSAN PERMOHONAN</td>
+          <td>11 OKTOBER 2021</td>
+          <td>23 NOVEMBER 2021</td>
+          <td>28 DISEMBER 2021</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>CETAK SLIP PRA DAFTAR</td>
+          <td>13 OKTOBER 2021</td>
+          <td>25 NOVEMBER 2021</td>
+          <td>29 DISEMBER 2021</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>PROSES MENDAFTAR KOLEJ BERMULA</td>
+          <td>15 OKTOBER 2021</td>
+          <td>26 NOVEMBER 2021</td>
+          <td>31 DISEMBER 2021</td>
+        </tr>
+      </table>
+    </div><br><br>
+    <div class="footer">
+      &copy; Hak Cipta UiTM Kampus Arau Perlis. HAK CIPTA TERPELIHARA.
+    </div>
+    </center>
+  </body>
+</html>
